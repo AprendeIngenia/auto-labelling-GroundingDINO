@@ -13,3 +13,5 @@ class AutoLabellingObjectDetect:
 
 auto_labeling = AutoLabellingObjectDetect()
 auto_labeling.main()
+
+# hola 
