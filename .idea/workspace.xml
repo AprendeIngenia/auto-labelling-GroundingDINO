@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90a21129-a5a7-45fa-a8f0-3c9eb6bd89b9" name="Changes" comment="" />
+    <list default="true" id="90a21129-a5a7-45fa-a8f0-3c9eb6bd89b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/database/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +25,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "feat/auto-labelling"
   }
 }]]></component>
   <component name="SharedIndexes">
