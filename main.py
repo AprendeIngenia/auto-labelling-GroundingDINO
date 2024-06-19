@@ -10,8 +10,8 @@ class AutoLabellingObjectDetect:
         images, names = self.data.read_images('database/images_with_labels')
         print(len(images), len(names))
 
+        # main process
+
 
 auto_labeling = AutoLabellingObjectDetect()
 auto_labeling.main()
-
-# hola 
