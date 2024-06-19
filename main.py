@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import time
 from database.read_database import ReadImages
+=======
+from database import ReadImages
+>>>>>>> a5ca029 (initial commit)
 
 
 class AutoLabellingObjectDetect:
