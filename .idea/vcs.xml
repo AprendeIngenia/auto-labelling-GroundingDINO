@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$/GroundingDINO" vcs="Git" />
 =======
     <mapping directory="$PROJECT_DIR$/auto-labelling-GroundingDINO" vcs="Git" />
@@ -14,5 +15,7 @@
 =======
     <mapping directory="$PROJECT_DIR$/GroundingDINO" vcs="Git" />
 >>>>>>> 66ff857 (add requirements)
+=======
+>>>>>>> adf14ee3f7f847b72cf784572a61bcfcd7fe8fc8
   </component>
 </project>

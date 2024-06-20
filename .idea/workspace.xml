@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -11,6 +12,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+=======
+  <component name="ChangeListManager">
+    <list default="true" id="90a21129-a5a7-45fa-a8f0-3c9eb6bd89b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/database/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+>>>>>>> adf14ee3f7f847b72cf784572a61bcfcd7fe8fc8
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -27,6 +35,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+=======
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2i766l2TcPRMANG3FikOgEQIVwM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> adf14ee3f7f847b72cf784572a61bcfcd7fe8fc8
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "git-widget-placeholder": "feat/grounding",
     "last_opened_file_path": "D:/M.2/Escritorio/Santiago_Sanchez/Kuenta/IDModelTrain"
   }
@@ -43,6 +59,11 @@
       <recent name="D:\utils\auto_labelling_GroundingDINO" />
     </key>
   </component>
+=======
+    "git-widget-placeholder": "feat/auto-labelling"
+  }
+}]]></component>
+>>>>>>> adf14ee3f7f847b72cf784572a61bcfcd7fe8fc8
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -61,7 +82,10 @@
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+=======
+>>>>>>> adf14ee3f7f847b72cf784572a61bcfcd7fe8fc8
 </project>
