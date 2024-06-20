@@ -4,11 +4,15 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$/GroundingDINO" vcs="Git" />
 =======
     <mapping directory="$PROJECT_DIR$/auto-labelling-GroundingDINO" vcs="Git" />
 >>>>>>> a5ca029 (initial commit)
 =======
 >>>>>>> 5791caf (initial commit)
+=======
+    <mapping directory="$PROJECT_DIR$/GroundingDINO" vcs="Git" />
+>>>>>>> 66ff857 (add requirements)
   </component>
 </project>
