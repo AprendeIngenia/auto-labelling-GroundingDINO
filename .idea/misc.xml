@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="Black">
     <option name="sdkName" value="Python 3.8 (auto_labelling_GroundingDINO)" />
   </component>
 =======
 >>>>>>> 5791caf (initial commit)
+=======
+  <component name="Black">
+    <option name="sdkName" value="Python 3.8 (auto_labelling_GroundingDINO)" />
+  </component>
+>>>>>>> adf14ee3f7f847b72cf784572a61bcfcd7fe8fc8
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (auto_labelling_GroundingDINO)" project-jdk-type="Python SDK" />
 </project>
