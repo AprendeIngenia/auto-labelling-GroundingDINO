@@ -18,7 +18,7 @@ class AutoLabellingObjectDetect:
         self.num_images: int = 0
         self.class_id: int = 0
 
-        self.box_threshold: float = 0.35
+        self.box_threshold: float = 0.38
         self.text_threshold: float = 0.25
 
         self.out_path: str = 'database/tagged_images/'
