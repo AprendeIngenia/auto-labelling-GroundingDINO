@@ -16,13 +16,13 @@ class AutoLabellingObjectDetect:
         # variables
         self.cont: int = 0
         self.num_images: int = 0
-        self.class_id: int = 0
+        self.class_id: int = 1
 
         self.box_threshold: float = 0.38
         self.text_threshold: float = 0.25
 
         self.out_path: str = 'database/tagged_images/'
-        self.prompt: str = 'car'
+        self.prompt: str = 'window'
         self.home: str = os.getcwd()
 
         self.save: bool = True
@@ -55,6 +55,7 @@ class AutoLabellingObjectDetect:
         grounding_model = self.config_grounding_model()
 
         while self.cont < self.num_images:
+            self.bbox_info = []
             print('------------------------------------')
             print(f'name_image: {self.names[self.cont]}')
 
@@ -109,7 +110,6 @@ class AutoLabellingObjectDetect:
                     out_frame = cv2.cvtColor(annotated_img, cv2.COLOR_BGR2RGB)
                     cv2.imshow('Grounding DINO detect', out_frame)
                     cv2.waitKey(0)
-
 
             self.cont += 1
 
