@@ -3,7 +3,7 @@ Hola, chicos en este repositorio encontrarán la programación para que puedan c
 
 ### Conceptos introductorios:
 - Este repositorio contiene el código fuente en Python para ejecutar y utilizar nuestro sistema de etiquetado automatico con el fin de entrenar modelos de detección de objetos.
-- Para iniciar recomendamos ver algunos conceptos introductorios con el fin de entender un poco mejor todo el funcionamiento, por eso te dejamos la explicacion en este [video.](https://youtu.be/jxiCDufWop8?si=gtu70gDS1swRXZRB)
+- Para iniciar recomendamos ver algunos conceptos introductorios con el fin de entender un poco mejor todo el funcionamiento, por eso te dejamos la explicacion en este [video.]([https://youtu.be/jxiCDufWop8?si=gtu70gDS1swRXZRB](https://youtu.be/CSGW6gQTdq8))
 - Los modelos lo puedes encontrar [aqui.](https://github.com/IDEA-Research/GroundingDINO)
 
 ![YoloV8](https://github.com/user-attachments/assets/f33e7c97-a566-4aa7-be25-af745639eb42)
