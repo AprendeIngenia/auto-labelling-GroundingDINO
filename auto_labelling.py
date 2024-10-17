@@ -16,17 +16,17 @@ class AutoLabellingObjectDetect:
         # variables
         self.cont: int = 0
         self.num_images: int = 0
-        self.class_id: int = 1
+        self.class_id: int = 2
 
         self.box_threshold: float = 0.38
         self.text_threshold: float = 0.25
 
         self.out_path: str = 'database/tagged_images/'
-        self.prompt: str = 'window'
+        self.prompt: str = 'face'
         self.home: str = os.getcwd()
 
         self.save: bool = True
-        self.draw: bool = True
+        self.draw: bool = False
 
         self.images: list = []
         self.names: list = []
@@ -46,7 +46,7 @@ class AutoLabellingObjectDetect:
     def config_grounding_model(self) -> Any:
         config_path = os.path.join(self.home, "GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py")
         check_point_path = 'GroundingDINO/weights/groundingdino_swint_ogc.pth'
-        model =load_model(config_path, check_point_path, device="cuda")
+        model = load_model(config_path, check_point_path, device="cuda")
         return model
 
     def main(self):
@@ -65,9 +65,9 @@ class AutoLabellingObjectDetect:
 
             transform = T.Compose(
                 [
-                T.RandomResize([800], max_size=1333),
-                T.ToTensor(),
-                T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+                    T.RandomResize([800], max_size=1333),
+                    T.ToTensor(),
+                    T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
                 ]
             )
 
@@ -75,32 +75,27 @@ class AutoLabellingObjectDetect:
             img_transform, _ = transform(img_source, None)
 
             boxes, logits, phrases = predict(
-                model = grounding_model,
-                image = img_transform,
-                caption = self.prompt,
-                box_threshold = self.box_threshold,
-                text_threshold = self.text_threshold,
-                device = "cuda"
+                model=grounding_model,
+                image=img_transform,
+                caption=self.prompt,
+                box_threshold=self.box_threshold,
+                text_threshold=self.text_threshold,
+                device="cuda"
             )
 
             if len(boxes) != 0:
                 h, w, _ = process_image.shape
-                xc, yc, an, al = boxes[0][0], boxes[0][1], boxes[0][2], boxes[0][3]
+                for i, box in enumerate(boxes):
+                    xc, yc, an, al = box[0], box[1], box[2], box[3]
 
-                # Error < 0
-                if xc < 0: xc = 0
-                if yc < 0: yc = 0
-                if an < 0: an = 0
-                if al < 0: al = 0
-                # Error > 1
-                if xc > 1: xc = 1
-                if yc > 1: yc = 1
-                if an > 1: an = 1
-                if al > 1: al = 1
+                    xc = max(0, min(xc, 1))
+                    yc = max(0, min(yc, 1))
+                    an = max(0, min(an, 1))
+                    al = max(0, min(al, 1))
 
-                self.bbox_info.append(f"{self.class_id} {xc} {yc} {an} {al}")
-                x1, y1, x2, y2 = int(xc * w), int(yc * h), int(an * w), int(al * h)
-                print(f"boxes: {boxes}\nxc: {x1} yc:{y1} w:{x2} h:{y2}")
+                    self.bbox_info.append(f"{self.class_id} {xc} {yc} {an} {al}\n")
+                    x1, y1, x2, y2 = int(xc * w), int(yc * h), int(an * w), int(al * h)
+                    print(f"boxes: {boxes}\nxc: {x1} yc:{y1} w:{x2} h:{y2}")
 
                 if self.save:
                     self.save_data(copy_image, self.bbox_info)
